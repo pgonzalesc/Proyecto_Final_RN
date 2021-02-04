@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text, Image, Dimensions, TouchableHighlight} from 'react-native';
+import {View, StyleSheet, Text, Image, Dimensions, TouchableHighlight, TouchableOpacity} from 'react-native';
 
 const {width, height} = Dimensions.get('window');
 
@@ -8,12 +8,13 @@ const styles = StyleSheet.create({
     flex: 1,
     width: width / 1.5,
     height: height / 4,
-    backgroundColor: 'white',
+    backgroundColor: '#B2BDAE',//'#D4E0CF',
     marginBottom: 25,
     borderRadius: 10,
   },
   textView: {
       paddingHorizontal: 10,
+      paddingVertical: 10,
   },
   image: {
     width: width / 1.5,
@@ -21,9 +22,11 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   itemTitle: {
-    color: '#212121',
-    fontSize: 20,
+    //color: '#212121',
+    fontSize: 22,
     fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#FFF'
   },
   itemPrice: {
     color: '#212121',
@@ -34,7 +37,7 @@ const styles = StyleSheet.create({
 
 const FoodSliderItem = ({item, onPress}) => {
   return (
-    <TouchableHighlight onPress={onPress}>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.container}>
         <Image
           style={styles.image}
@@ -44,10 +47,9 @@ const FoodSliderItem = ({item, onPress}) => {
         />
         <View style={styles.textView}>
           <Text style={styles.itemTitle}>{item.desc}</Text>
-          <Text style={styles.itemPrice}>58</Text>
         </View>
       </View>
-    </TouchableHighlight>
+    </TouchableOpacity>
   );
 };
 
