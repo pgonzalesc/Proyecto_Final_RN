@@ -1,129 +1,177 @@
 {
-    "food":[
+  "food": [
+    {
+      "id": 1,
+      "desc": "Desayuno",
+      "img": "https://images.unsplash.com/photo-1438401817917-ee9dc33fe6af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=969&q=80"
+    },
+    {
+      "id": 2,
+      "desc": "Almuerzo",
+      "img": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    },
+    {
+      "id": 3,
+      "desc": "Cena",
+      "img": "https://images.unsplash.com/photo-1532635221-7bb24003b3ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    }
+  ],
+  "menu": [
+    {
+      "1": [
         {
-            "id": 1,
-            "desc": "Desayuno",
-            "img": "https://images.unsplash.com/photo-1438401817917-ee9dc33fe6af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=969&q=80"
+          "id": 1,
+          "date": "05/02/2021",
+          "desc": "Tostada integral con tomate, aceite y kiwi"
         },
         {
-            "id": 2,
-            "desc": "Almuerzo",
-            "img": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          "id": 2,
+          "date": "06/02/2021",
+          "desc": "Huevo duro, pan con queso"
+        }
+      ],
+      "2": [
+        {
+          "id": 1,
+          "date": "05/02/2021",
+          "desc": "Ensalada de lechuga, trucha frita con arroz, mazamorra"
         },
         {
-            "id": 3,
-            "desc": "Cena",
-            "img": "https://images.unsplash.com/photo-1532635221-7bb24003b3ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          "id": 2,
+          "date": "06/02/2021",
+          "desc": "Ensalada de lechuga, carapulcra de chancho, manzana"
         }
-    ],
-    "menu":[
+      ],
+      "3": [
         {
-            "1":[
-                {
-                    "id":1,
-                    "date": "04/02/2021",
-                    "desc": "Tostada integral con tomate, aceite y kiwi"
-                },
-                {
-                    "id":2,
-                    "date": "05/02/2021",
-                    "desc": "Huevo duro, pan con queso"
-                }
-            ],
-            "2":[
-                {
-                    "id":1,
-                    "date": "04/02/2021",
-                    "desc": "Ensalada de lechuga, trucha frita con arroz, mazamorra"
-                },
-                {
-                    "id":2,
-                    "date": "05/02/2021",
-                    "desc": "Ensalada de lechuga, carapulcra de chancho, manzana"
-                }
-            ],
-            "3":[
-                {
-                    "id":1,
-                    "date": "04/02/2021",
-                    "desc": "Ají de gallina, platano"
-                },
-                {
-                    "id":2,
-                    "date": "05/02/2021",
-                    "desc": "Pollo al horno, mango"
-                }
-            ]
-        }
-    ],
-    "horario":[
+          "id": 1,
+          "date": "05/02/2021",
+          "desc": "Ají de gallina, platano"
+        },
         {
-            "1": [
-                {
-                    "id": 1,
-                    "desc": "6:30 - 7:00"
-                },
-                {
-                    "id": 2,
-                    "desc": "7:00 - 7:30"
-                },
-                {
-                    "id": 3,
-                    "desc": "7:30 - 8:00"
-                },
-                {
-                    "id": 4,
-                    "desc": "8:00 - 8:30"
-                },
-                {
-                    "id": 5,
-                    "desc": "8:30 - 9:00"
-                }
-            ],
-            "2": [
-                {
-                    "id": 1,
-                    "desc": "12:30 - 13:00"
-                },
-                {
-                    "id": 2,
-                    "desc": "13:00 - 13:30"
-                },
-                {
-                    "id": 3,
-                    "desc": "13:30 - 14:00"
-                },
-                {
-                    "id": 4,
-                    "desc": "14:00 - 14:30"
-                },
-                {
-                    "id": 5,
-                    "desc": "14:30 - 15:00"
-                }
-            ],
-            "3": [
-                {
-                    "id": 1,
-                    "desc": "18:30 - 19:00"
-                },
-                {
-                    "id": 2,
-                    "desc": "19:00 - 19:30"
-                },
-                {
-                    "id": 3,
-                    "desc": "19:30 - 20:00"
-                },
-                {
-                    "id": 4,
-                    "desc": "20:00 - 20:30"
-                },
-                {
-                    "id": 5,
-                    "desc": "20:30 - 21:00"
-                }
-            ]
+          "id": 2,
+          "date": "06/02/2021",
+          "desc": "Pollo al horno, mango"
         }
-    ]
+      ]
+    }
+  ],
+  "horario": [
+    {
+      "1": [
+        {
+          "id": 1,
+          "desc": "6:30 - 7:00",
+          "hora_ini": "6:30",
+          "hora_fin": "7:00"
+        },
+        {
+          "id": 2,
+          "desc": "7:00 - 7:30",
+          "hora_ini": "7:00",
+          "hora_fin": "7:30"
+        },
+        {
+          "id": 3,
+          "desc": "7:30 - 8:00",
+          "hora_ini": "7:30",
+          "hora_fin": "8:00"
+        },
+        {
+          "id": 4,
+          "desc": "8:00 - 8:30",
+          "hora_ini": "8:00",
+          "hora_fin": "8:30"
+        },
+        {
+          "id": 5,
+          "desc": "8:30 - 9:00",
+          "hora_ini": "8:30",
+          "hora_fin": "9:00"
+        }
+      ],
+      "2": [
+        {
+          "id": 1,
+          "desc": "12:30 - 13:00",
+          "hora_ini": "12:30",
+          "hora_fin": "13:00"
+        },
+        {
+          "id": 2,
+          "desc": "13:00 - 13:30",
+          "hora_ini": "13:00",
+          "hora_fin": "13:30"
+        },
+        {
+          "id": 3,
+          "desc": "13:30 - 14:00",
+          "hora_ini": "13:30",
+          "hora_fin": "14:00"
+        },
+        {
+          "id": 4,
+          "desc": "14:00 - 14:30",
+          "hora_ini": "14:00",
+          "hora_fin": "14:30"
+        },
+        {
+          "id": 5,
+          "desc": "14:30 - 15:00",
+          "hora_ini": "14:30",
+          "hora_fin": "15:00"
+        }
+      ],
+      "3": [
+        {
+          "id": 1,
+          "desc": "18:30 - 19:00",
+          "hora_ini": "18:30",
+          "hora_fin": "19:00"
+        },
+        {
+          "id": 2,
+          "desc": "19:00 - 19:30",
+          "hora_ini": "19:00",
+          "hora_fin": "19:30"
+        },
+        {
+          "id": 3,
+          "desc": "19:30 - 20:00",
+          "hora_ini": "19:30",
+          "hora_fin": "20:00"
+        },
+        {
+          "id": 4,
+          "desc": "20:00 - 20:30",
+          "hora_ini": "20:00",
+          "hora_fin": "20:30"
+        },
+        {
+          "id": 5,
+          "desc": "20:30 - 21:00",
+          "hora_ini": "20:30",
+          "hora_fin": "21:00"
+        }
+      ]
+    }
+  ],
+  "reservas": [
+    {
+      "id": 1,
+      "id_food": 1,
+      "usuario": "PGONZALESC",
+      "date": "05/02/2021",
+      "hora_ini": "8:30",
+      "hora_fin": "9:00"
+    },
+    {
+      "id": 2,
+      "id_food": 2,
+      "usuario": "PGONZALESC",
+      "date": "05/02/2021",
+      "hora_ini": "13:00",
+      "hora_fin": "13:30"
+    }
+  ]
 }

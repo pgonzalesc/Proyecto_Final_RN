@@ -12,6 +12,8 @@ const Detalle = ({navigation, route}) => {
     const [error, setError] = useState('');
     const {id, desc} = route.params;
     const f_actual = moment().format('DD/MM/YYYY');
+    const usuario = 'PGONZALESC';
+    const [idReserva, setIdReserva] = useState(null);
 
     useEffect(() => {
         Api.dataApi
@@ -45,7 +47,40 @@ const Detalle = ({navigation, route}) => {
         .catch((e) => {
             setError(e.errors);
         });
+
+        Api.dataApi
+        .getReservas()
+        .then((data) => {
+            if(data.errors) {
+                setError(data.errors);
+            } else {
+                setIdReserva(data);    
+            }
+        })
+        .catch((e) => {
+            setError(e.errors);
+        });
     }, []);
+
+    const handleReserva = (horaIni, horaFin) => {
+        const parameters = {
+            "id": idReserva,
+            "id_food": id,
+            "usuario": usuario,
+            "date": f_actual,
+            "hora_ini": horaIni,
+            "hora_fin": horaFin
+        }
+        Api.dataApi.createReserva(parameters)
+        .then((data) => {
+            if (data.errors) {
+                console.warn('get api order error', data);
+                setError(data.errors);
+            } else {
+                navigation.navigate('Home');
+            }
+        });
+    }
 
     return (
         <ImageBackground source={image} style={styles.image}>
@@ -68,7 +103,9 @@ const Detalle = ({navigation, route}) => {
                     horario.map(
                         (i) => (
                             <View key={i.id}>
-                                <TouchableOpacity style={styles.button}>
+                                <TouchableOpacity style={styles.button} onPress={()=>{
+                                    handleReserva(i.hora_ini, i.hora_fin);
+                                }}>
                                     <Text style={styles.textButton}>{i.desc}</Text>
                                 </TouchableOpacity>
                             </View>
