@@ -21,36 +21,36 @@
       "1": [
         {
           "id": 1,
-          "date": "05/02/2021",
+          "date": "06/02/2021",
           "desc": "Tostada integral con tomate, aceite y kiwi"
         },
         {
           "id": 2,
-          "date": "06/02/2021",
+          "date": "07/02/2021",
           "desc": "Huevo duro, pan con queso"
         }
       ],
       "2": [
         {
           "id": 1,
-          "date": "05/02/2021",
+          "date": "06/02/2021",
           "desc": "Ensalada de lechuga, trucha frita con arroz, mazamorra"
         },
         {
           "id": 2,
-          "date": "06/02/2021",
+          "date": "07/02/2021",
           "desc": "Ensalada de lechuga, carapulcra de chancho, manzana"
         }
       ],
       "3": [
         {
           "id": 1,
-          "date": "05/02/2021",
+          "date": "06/02/2021",
           "desc": "Ají de gallina, platano"
         },
         {
           "id": 2,
-          "date": "06/02/2021",
+          "date": "07/02/2021",
           "desc": "Pollo al horno, mango"
         }
       ]
@@ -161,17 +161,9 @@
       "id": 1,
       "id_food": 1,
       "usuario": "PGONZALESC",
-      "date": "05/02/2021",
-      "hora_ini": "8:30",
-      "hora_fin": "9:00"
-    },
-    {
-      "id": 2,
-      "id_food": 2,
-      "usuario": "PGONZALESC",
-      "date": "05/02/2021",
-      "hora_ini": "13:00",
-      "hora_fin": "13:30"
+      "date": "06/02/2021",
+      "hora_ini": "8:00",
+      "hora_fin": "8:30"
     }
   ]
 }

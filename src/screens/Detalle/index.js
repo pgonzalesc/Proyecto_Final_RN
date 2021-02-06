@@ -54,7 +54,7 @@ const Detalle = ({navigation, route}) => {
             if(data.errors) {
                 setError(data.errors);
             } else {
-                setIdReserva(data);    
+                setIdReserva(data.length+1);    
             }
         })
         .catch((e) => {
@@ -71,6 +71,7 @@ const Detalle = ({navigation, route}) => {
             "hora_ini": horaIni,
             "hora_fin": horaFin
         }
+        console.log('parameters', parameters);
         Api.dataApi.createReserva(parameters)
         .then((data) => {
             if (data.errors) {

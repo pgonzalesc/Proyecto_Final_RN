@@ -2,6 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from 'react-native-vector-icons/Ionicons';
 import { MainStackNavigator } from "../Stack";
+import Reserva from '../../../screens/Reserva';
 
 const Tab = createBottomTabNavigator();
 
@@ -12,8 +13,10 @@ const TabNavigator = () => {
               let iconName;
               if (route.name === 'Home') {
                 iconName = focused ? 'md-home' : 'md-home-outline';
+              } else if (route.name === 'Ver Reservas') {
+                iconName = focused ? 'md-fast-food' : 'md-fast-food-outline';
               }
-              return (<Icon name={iconName} size={size} color={color}/>);
+              return (<Icon name={iconName} size={30} color={color}/>);
             },
           })}
           tabBarOptions={{
@@ -21,6 +24,7 @@ const TabNavigator = () => {
             inactiveTintColor: 'gray',
           }} >
           <Tab.Screen name="Home" component={MainStackNavigator} />
+          <Tab.Screen name="Ver Reservas" component={Reserva} />
         </Tab.Navigator>
     )
 }
